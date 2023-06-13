@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Tree</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      /*adding the background slideshow*/
+      .my_tree_Container {
+        width: 100%;
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        animation: animate 20s ease-in-out infinite;
+        background-image: url('images/EarlyMorning.png');
+      }
+
+      @keyframes animate{
+        0%,100% {
+          background-image: url('images/EarlyMorning.png');
+        }
+        25% {
+          background-image: url('images/Midday.png');
+        }
+        50% {
+          background-image: url('images/Sunset.png');
+        }
+        75% {
+          background-image: url('images/Nighttime.png');
+        }
+      }
+      /*styling navbar by Benjamin, same as other files*/
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .left_Side {
+        display: flex;
+      }
+
+      .navbar > .left_Side > div {
+        margin-right: 20px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+      }
+
+      .navbar > .right_Side > div {
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .hyperlink {
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+      }
+
+      .hyperlink a { /*take the hyperlink itself*/
+        color: white;
+        text-decoration: none;
+        transition: color 0.5s;
+      }
+
+      .hyperlink:hover { /*when hovering over the hyperlink*/
+        border-bottom: 1px solid black;
+      }
+
+      .hyperlink a:hover { /*when hovering over the hyperlink*/
+        color: black;
+      }
+      /*finished styling the navigation bar*/
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        width: auto;
+        height: 85%;
+      }
+      /*centres the image in the middle of the page*/
+
+    </style>
+  </head>
+  <body>
+
+    <div class="my_tree_Container">
+      <!--beginning of navbar-->
+      <div class="navbar">
+        <!--left side of the navbar-->
+        <div class="left_Side">
+          <!--hyperlink to my tree-->
+          <div class="hyperlink">
+            <a href="myTree.html">my tree</a>
+          </div>
+
+          <!--hyperlink to our garden-->
+          <div class="hyperlink">
+            <a href="ourGarden.html">our garden</a>
+          </div>
+
+          <!--hyperlink to company donations-->
+          <div class="hyperlink">
+            <a href="companyDonations.html">company donations</a>
+          </div>
+        </div>
+        <!--right side of the navbar-->
+        <div class="right_Side">
+          <div class="identity">
+            <div>CompanyID: A Company</div>
+          </div>
+          <div class="identity">
+            <div>UserID: James Smith</div>
+          </div>
+        </div>
+      </div>
+      <!--end of navbar-->
+<<<<<<< HEAD
+      <!--adding the tree image
+      <img id="myImg" src="https://i.ibb.co/6vgp5V0/drawisland-3.png" class="center" width="502" height="580">
+    -->
+=======
+      <!--adding the tree image avatar-->
+      <img id="myImg" src="https://i.ibb.co/6vgp5V0/drawisland-3.png" class="center" width="502" height="580">
+>>>>>>> b8b9b905ec807848aaaecbc71bcb27da60b80a8a
+    </div>
+    <!--this script will use variables to update the tree image-->
+    <script type="text/javascript">
+      var treeGrowth = 4;
+      var treeSize = 0;
+      //variables to simulate input of points
+      treeSize = treeSize + treeGrowth;
+      //this function goes throuh and sees what size the tree should be, changing the image appropriately
+      function updateTree() {
+        if (treeSize > 6){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/6B78s51/drawisland-8.png`;
+        }else if (treeSize > 5){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/ZGLQyrH/drawisland-7.png`;
+        } else if (treeSize > 4){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/TLrLzx2/drawisland-6.png`;
+        } else if (treeSize > 3){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/Dg4rwbL/drawisland-4.png`;
+        } else if (treeSize > 2){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/M1RsZBJ/drawisland-5.png`;
+        } else if (treeSize > 1){
+          document.getElementById("myImg").src = String.raw`https://i.ibb.co/jWKhnDm/drawisland-2.png`;
+        } else {
+            document.getElementById("myImg").src = String.raw`https://i.ibb.co/6vgp5V0/drawisland-3.png`;
+          }
+        }
+        updateTree();
+        //calls the function to update the tree
+    </script>
+  </body>
+</html>

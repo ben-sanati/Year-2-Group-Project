@@ -1,0 +1,161 @@
+body {
+  margin: 0px;
+}
+
+/*adding the background slideshow*/
+.my_tree_Container, .our_garden_Container {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: animate 20s ease-in-out infinite;
+  background-image: url('images/EarlyMorning.png');
+}
+
+.company_donations_Container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes animate{
+  0%,100% {
+    background-image: url('images/EarlyMorning.png');
+  }
+  25% {
+    background-image: url('images/Midday.png');
+  }
+  50% {
+    background-image: url('images/Sunset.png');
+  }
+  75% {
+    background-image: url('images/Nighttime.png');
+  }
+}
+/*finished adding the background slideshow*/
+
+/*styling the navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left_Side {
+  display: flex;
+}
+
+.navbar > .left_Side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.navbar > .right_Side > div {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+.hyperlink {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.hyperlink a { /*take the hyperlink itself*/
+  color: yellow;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.hyperlink:hover { /*when hovering over the hyperlink*/
+  border-bottom: 1px solid black;
+}
+
+.hyperlink a:hover { /*when hovering over the hyperlink*/
+  color: black;
+}
+/*finished styling the navigation bar*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: auto;
+  height: 85%;
+}
+/*centres the image in the middle of the page*/
+
+.rightImage {
+
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 85%;
+/*positions an image on the right side of the page*/
+}
+
+.leftImage {
+
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 85%;
+}
+
+.bottombar {
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height:25%;
+
+}
+
+.table {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-spacing:5px; /* need some space ?*/
+  table-layout:auto;
+  height:20%;
+  width:100%;
+  }
+.table div {
+  display:inline;
+  max-width: 30%;
+  padding: 0px;
+  }
+img {
+  width:100%;
+  }
+
+  p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rightTree {
+  position: absolute;
+  right: 100px;
+  height: 50%;
+  width: auto;
+}
+
+h1 {
+  color:white;
+  font-size:300%;
+}

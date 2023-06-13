@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Our Garden</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      /*adding the background slideshow, same as other files, done by Benjamin*/
+      .our_garden_Container {
+        width: 100%;
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        animation: animate 20s ease-in-out infinite;
+        background-image: url('images/EarlyMorning.png');
+      }
+
+      @keyframes animate{
+        0%,100% {
+          background-image: url('images/EarlyMorning.png');
+        }
+        25% {
+          background-image: url('images/Midday.png');
+        }
+        50% {
+          background-image: url('images/Sunset.png');
+        }
+        75% {
+          background-image: url('images/Nighttime.png');
+        }
+      }
+      /*styling navbar by Benjamin, same as other files*/
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .left_Side {
+        display: flex;
+      }
+
+      .navbar > .left_Side > div {
+        margin-right: 20px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+      }
+
+      .navbar > .right_Side > div {
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: yellow;
+      }
+
+      .hyperlink {
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+      }
+
+      .hyperlink a { /*take the hyperlink itself*/
+        color: yellow;
+        text-decoration: none;
+        transition: color 0.5s;
+      }
+
+      .hyperlink:hover { /*when hovering over the hyperlink*/
+        border-bottom: 1px solid black;
+      }
+
+      .hyperlink a:hover { /*when hovering over the hyperlink*/
+        color: black;
+      }
+      /*finished styling the navigation bar*/
+
+      .rightImage {
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        height: 85%;
+      /*positions an image on the right side of the page*/
+      }
+
+      .leftImage {
+        width: 50%;
+        position: absolute;
+        left: 0px;
+        height: 85%;
+        /*positions an image on the left side of the page*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="our_garden_Container">
+      <!--beginning of navbar, created by Benjamin-->
+      <div class="navbar">
+        <!--left side of the navbar, created by Benjamin-->
+        <div class="left_Side">
+          <!--hyperlink to my tree, by Benjamin-->
+          <div class="hyperlink">
+            <a href="myTree.html">my tree</a>
+          </div>
+          <!--hyperlink to our garden, by Benjamin-->
+          <div class="hyperlink">
+            <a href="ourGarden.html">our garden</a>
+          </div>
+          <!--hyperlink to company donations, by Benjamin-->
+          <div class="hyperlink">
+            <a href="companyDonations.html">company donations</a>
+          </div>
+        </div>
+        <!--right side of the navbar, created by Benjamin, edited slightly by Millicent-->
+        <div class="right_Side">
+          <div class="identity">
+            <div>CompanyID: aCompany</div>
+          </div>
+          <div class="identity">
+            <div>UserID: James Smith</div>
+          </div>
+        </div>
+
+      </div>
+      <!--end of navbar. the rest of the code is done by Millicent-->
+      <img id="u1Img" src="https://i.ibb.co/6B78s51/drawisland-8.png" alt="Tree stage 6" class="rightImage">
+      <img id="u2Img" src="https://i.ibb.co/Dg4rwbL/drawisland-4.png" alt="Tree stage 4" class="leftImage">
+
+    </div>
+    <script type="text/javascript">
+    //JavaScript to change and update the tree sizes
+    //dummy variables which simulate changing the tree growth
+      var U1treeGrowth = 4;
+      var U1treeSize = 0;
+      U1treeSize = U1treeSize + U1treeGrowth;
+      var U2treeGrowth = 7;
+      var U2treeSize = 0;
+      U2treeSize = U2treeSize + U2treeGrowth;
+      function updateTrees() {
+        if (U1treeSize > 6){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/6B78s51/drawisland-8.png`;
+        } else if (U1treeSize > 5){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/ZGLQyrH/drawisland-7.png`;
+        } else if (U1treeSize > 4){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/TLrLzx2/drawisland-6.png`;
+        } else if (U1treeSize > 3){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/Dg4rwbL/drawisland-4.png`;
+        } else if (U1treeSize > 2){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/M1RsZBJ/drawisland-5.png`;
+        } else if (U1treeSize > 1){
+          document.getElementById("u1Img").src = String.raw`https://i.ibb.co/jWKhnDm/drawisland-2.png`;
+        } else {
+            document.getElementById("u1Img").src = String.raw`https://i.ibb.co/6vgp5V0/drawisland-3.png`;
+          }
+
+        if (U2treeSize > 6){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/6B78s51/drawisland-8.png`;
+        } else if (U2treeSize > 5){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/ZGLQyrH/drawisland-7.png`;
+        } else if (U2treeSize > 4){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/TLrLzx2/drawisland-6.png`;
+        } else if (U2treeSize > 3){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/Dg4rwbL/drawisland-4.png`;
+        } else if (U2treeSize > 2){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/M1RsZBJ/drawisland-5.png`;
+        } else if (U2treeSize > 1){
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/jWKhnDm/drawisland-2.png`;
+        } else {
+          document.getElementById("u2Img").src = String.raw`https://i.ibb.co/6vgp5V0/drawisland-3.png`;
+        }
+        }
+        updateTrees();
+
+    </script>
+  </body>
+</html>

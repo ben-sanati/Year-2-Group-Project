@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <style>
+    body {
+      margin: 0px;
+    }
+    /*styling the navigation bar*/
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .left_Side {
+      display: flex;
+    }
+
+    .navbar > .left_Side > div {
+      margin-right: 20px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+    }
+
+    .navbar > .right_Side > div {
+      margin-bottom: 5px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      color: yellow;
+    }
+
+    .hyperlink {
+      height: 22px;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.5s;
+    }
+
+    .hyperlink a { /*take the hyperlink itself*/
+      color: yellow;
+      text-decoration: none;
+      transition: color 0.5s;
+    }
+
+    .hyperlink:hover { /*when hovering over the hyperlink*/
+      border-bottom: 1px solid black;
+    }
+
+    .hyperlink a:hover { /*when hovering over the hyperlink*/
+      color: black;
+    }
+    /*finished styling the navigation bar (ie Benjamin's work)*/
+
+    /* formatting login page*/
+    .login-container {
+      width: 100%;
+      height: 100vh;
+      background-image: url(https://images.freeimages.com/images/large-previews/5d2/cyancircles-1170532.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /*styling the login box*/
+    #login{
+        width: 35%;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 60%;
+        padding: 5%;
+        background: #FDFDAF;
+        border-radius: 15px ;
+
+      }
+      /*styling heading on page*/
+      h2{
+          text-align: center;
+          color: #277582;
+          padding: 20px;
+          font-size: 64px;
+          margin-top:-4px;
+          margin-bottom:-4px;
+      }
+      /*styling label for loginpage*/
+      label{
+          color: #08ffd1;
+          font-size: 40px;
+      }
+      /*styling userID input*/
+      #UID{
+          width: 90%;
+          height: 100%;
+          border: none;
+          border-radius: 3%;
+          padding-left: 10%;
+          font-size:30px;
+      }
+      /*styling companyID input*/
+      #CompID{
+          width: 90%;
+          height: 100%;
+          border: none;
+          border-radius: 3%;
+          padding-left: 10%;
+          font-size:30px;
+
+      }
+      /*styling login box*/
+      #log{
+        width: 100%;
+        height: 20%;
+        border: none;
+        border-radius: 2px;
+        padding-left: 7px;
+        color: blue;
+        font-size: 30px;
+
+      }
+      /*style of top right navbar displaying comp&userID*/
+      span{
+          color: yellow;
+          font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <!--beginning of navbar-->
+      <div class="navbar">
+        <!--left side of the navbar-->
+        <div class="left_Side">
+          <!--hyperlink to my tree-->
+          <div class="hyperlink">
+            <a href="myTree.html">my tree</a>
+          </div>
+          <!--hyperlink to our garden-->
+          <div class="hyperlink">
+            <a href="ourGarden.html">our garden</a>
+          </div>
+          <!--hyperlink to company donations-->
+          <div class="hyperlink">
+            <a href="companyDonations.html">company donations</a>
+          </div>
+        </div>
+        <!--right side of the navbar-->
+        <div class="right_Side">
+          <div class="identity">
+            <!--"id=" for the company and user ids linked to functions below, done by Millicent -->
+            <div>CompanyID:  <span id="finalCompID"></span></div>
+          </div>
+          <div class="identity">
+            <div>UserID:  <span id="finalUID"></span></div>
+          </div>
+        </div>
+      </div>
+      <!--end of navbar and Benjamin's work-->
+      <h2>Login Page</h2><br>
+      <div id="login">
+        <!--setting up the user login section -->
+            <label><b>User ID</b></label>
+            <input type="text" name="UserID" id="UID" placeholder="UserID">
+            <!--input field for userID -->
+            <br><br>
+            <label><b>Company ID</b></label>
+            <input type="text" name="CompanyID" id="CompID" placeholder="CompanyID">
+            <!--input field for companyID -->
+            <br><br>
+            <br><br>
+            <button type="button" onclick="updateUserData()" id="log">Login</button>
+            <!--when button clicked, call the updateUserData() function -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    function updateUserData() {
+      var tempuserID = document.getElementById('UID').value;
+      var tempcompID = document.getElementById('CompID').value;
+      //gets the fields the user has inputted in the boxes
+      localStorage.setItem('userID', tempuserID);
+      localStorage.setItem('companyID', tempcompID);
+      //saves userID and compnayID to localstorage
+      updateIDs();
+      //calls new function
+    }
+    function updateIDs() {
+      document.getElementById("finalCompID").innerHTML = localStorage.getItem('companyID');
+      document.getElementById("finalUID").innerHTML = localStorage.getItem('userID');
+      //updates the navigation bar to show the userID and companyID
+    }
+    </script>
+  </body>
+</html>

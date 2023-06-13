@@ -1,0 +1,22 @@
+To Dos:
+1. Build the project
+  - Creating the folder structure	                  ✓
+  - adding files                                  	✓
+  - connecting files                                ✓
+
+2. Navbar
+    - 3 links and 1 -> company name 2 -> user id   	✓
+
+3. Login page
+  - Company id                                    	✓
+  - User id                                         ✓
+
+4. My Tree
+  - Tree graphic photo change                       ✓
+  - Tree photo changes depending on points          ✓
+
+5. Our Garden
+  - Shows present state of all user trees within a Company ✓
+
+6. Company Donations                                 ✓
+  - Company Donations Leaderboard                    ✓

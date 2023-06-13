@@ -1,0 +1,172 @@
+<!--This is a comment-->
+<!DOCTYPE html>                                 <!--This is a HTML5 website-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   <!--include a css file-->
+  </head>
+  <body>
+    <!--Create a container class to manage all elements on the page-->
+    <div class="container">                     <!--div creates an object-->
+    <!--creating a navbar div-->
+    <!----------------------------------------------------------------->
+      <div class="nav-wrapper">                 <!--each div is used for a group or section of the webpage-->
+          <div class="left-side">
+              <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">HOME</a>           <!--Creates a hyperlink-->
+              </div>
+
+              <div class="nav-link-wrapper">
+                <a href="about.html">ABOUT</a>
+              </div>
+
+          </div>
+
+          <div class="right-side">
+            <div class="brand">
+              <div>BENJAMIN SANATI</div>
+            </div>
+          </div>
+
+      </div>
+      <!--navbar completed-->
+
+      <!--creating images div-->
+      <!----------------------------------------------------------------->
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+          <!--img1-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image1.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/crondose.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio1
+              </div>
+            </div>
+
+          </div>
+          <!--ending1-->
+
+          <!--img2-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image2.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dailysmarty.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio2
+              </div>
+            </div>
+
+          </div>
+          <!--ending2-->
+
+          <!--img3-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image3.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dashtrack.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio3
+              </div>
+            </div>
+
+          </div>
+          <!--ending3-->
+
+          <!--img4-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image4.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/eventbrite.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio4
+              </div>
+            </div>
+
+          </div>
+          <!--ending4-->
+
+          <!--img5-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image5.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/open-devos.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio5
+              </div>
+            </div>
+
+          </div>
+          <!--ending5-->
+
+          <!--img6-->
+          <div class="portfolio-item-wrapper">
+            <!--create a div which solely stores an image in its background-->
+            <div class="portfolio-img-background" style="background-image:url(images/image6.jpg)"></div>
+
+            <div class="image-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/quip.png" alt=>
+              </div>
+
+              <div class="subtitle">
+                Coolio6
+              </div>
+            </div>
+
+          </div>
+          <!--ending6-->
+
+        </div>
+
+      </div>
+      <!--images completed-->
+
+    </div>
+
+  </body>
+<!--write Javascript code here-->
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      portfolioItem.childNodes[3].classList.add('img-darken');
+    })
+
+    portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[3].classList.remove('img-darken');
+    })
+  })
+</script>
+</html>

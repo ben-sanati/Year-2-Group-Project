@@ -1,0 +1,7 @@
+*.log
+*.raw
+*.plt
+*credentials.h
+Accelerometer/*
+Pseudocode or Circuit Diagrams/*
+Server/*
