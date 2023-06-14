@@ -4,6 +4,9 @@ Table of Contents
 * [Year 2 Design Project: Team Pandemic](#year-2-design-project-team-pandemic)
    * [Problem Statement](#problem-statement)
    * [Team Solution](#team-solution)
+   * [Reports](#reports)
+      * [Team Report](#team-report)
+      * [Individual Report](#individual-report)
       * [**Contributors**](#contributors)
 
 # Year 2 Design Project: Team Pandemic
@@ -27,6 +30,14 @@ Our prototype solution, `Abor.io`, has been designed to address the issues of co
 | Full System Workflow Diagram | System Website Home Page |
 |---------|---------|
 | <img src=READMEimgs/fullSystem.png width="310"/> | <img src=READMEimgs/IndividualWebsite.png width="390"/> |
+
+## Reports 
+
+### Team Report
+The team report detailing our final system can be found [here](team_report.pdf).
+
+### Individual Report
+My individual report detailing my individual contribution towards the project can be found [here](individual_report.pdf).
 
 ### **Contributors**
 `Benjamin Sanati`
