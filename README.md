@@ -1,3 +1,9 @@
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) &emsp;
+![CSS](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) &emsp;
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) &emsp;
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) &emsp;
+![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
+
 Table of Contents
 =================
 
@@ -10,14 +16,6 @@ Table of Contents
       * [**Contributors**](#contributors)
 
 # Year 2 Design Project: Team Pandemic
-
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) &emsp;
-![CSS](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) &emsp;
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) &emsp;
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) &emsp;
-![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white) &emsp;
-
-<br />
 
 ## Problem Statement
 The COVID-19 pandemic has forced many companies to shift to remote work to ensure the safety of their employees. While remote work has its advantages, it also presents challenges in promoting physical activity and wellness among employees. Without the structure of an office environment and the ability to engage in physical activities with colleagues, employees may find it difficult to maintain an active lifestyle. This can lead to negative health outcomes and decreased productivity.
